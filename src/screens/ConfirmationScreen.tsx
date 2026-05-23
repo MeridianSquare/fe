@@ -21,7 +21,7 @@ export function ConfirmationScreen(): React.ReactElement {
   const [investor, setInvestor] = useState<Investor | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-
+console.log("ConfirmationScreen rendered with investorId:");
   useEffect(() => {
     if (!investorId) {
       navigate("/", { replace: true });
